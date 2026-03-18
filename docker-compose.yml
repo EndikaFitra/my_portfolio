@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  web-porto:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      # uncomment and set args if you need ENV vars baked into the frontend build
+      args:
+        - VITE_SUPABASE_URL=${VITE_SUPABASE_URL}
+        - VITE_SUPABASE_ANON_KEY=${VITE_SUPABASE_ANON_KEY}
+        - VITE_WEB3FORMS_ACCESS_KEY=${VITE_WEB3FORMS_ACCESS_KEY}
+    container_name: web-porto
+    ports:
+      - "8004:8004"
+    restart: unless-stopped
