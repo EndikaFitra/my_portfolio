@@ -61,7 +61,7 @@ const HeroSection = () => {
             size="lg"
             className="rounded-full px-8 font-display"
           >
-            <a href="/cv-endika.pdf" download="CV_Endika_Fitra.pdf">
+            <a href="https://drive.google.com/file/d/11YsSc85SQQ6SHva3VLhoToEAm8gu-p4I/view?usp=sharing" target="_blank" rel="noopener noreferrer">
               <Download size={16} className="mr-2" />
               Unduh CV
             </a>
