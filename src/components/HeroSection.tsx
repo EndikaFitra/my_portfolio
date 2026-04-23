@@ -61,7 +61,7 @@ const HeroSection = () => {
             size="lg"
             className="rounded-full px-8 font-display"
           >
-            <a href="https://drive.google.com/file/d/11YsSc85SQQ6SHva3VLhoToEAm8gu-p4I/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/1OV6re03DylwjO9QtTM-vkijmbjpve1f1/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
               <Download size={16} className="mr-2" />
               Unduh CV
             </a>

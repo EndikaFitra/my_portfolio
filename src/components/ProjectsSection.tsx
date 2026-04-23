@@ -24,14 +24,20 @@ const projects = [
   {
     title: "Obsicare: Aplikasi Monitoring & Rekomendasi Makanan Berdasarkan Kalori",
     desc: "Aplikasi penanggulangan risiko obesitas di Indonesia. Berperan sebagai Back-end Web Developer menggunakan framework FastAPI berpadu dengan database PostgreSQL.",
-    tech: ["FastAPI", "PostgreSQL", "Backend", "Python"],
+    tech: ["FastAPI", "PostgreSQL", "Backend", "Python", "Machine Learning"],
     link: "https://github.com/ObsiCare/ObsiCare", 
   },
   {
     title: "AIOps - AI-Powered Operations Dashboard",
     desc: "Dashboard untuk memantau dan menganalisis data operasional infrastruktur IT. Menggunakan LLM untuk peringkasan data, deteksi anomali, dan rekomendasi tindakan proaktif.",
-    tech: ["LLM", "RAG", "MCP", "Ollama", "Docker", "Prometheus", "Data Warehouse"],
+    tech: ["LLM", "RAG", "MCP", "Ollama", "Docker", "PostgreSQL", "Prometheus", "Data Warehouse", "ChromaDB", "qwen3:4b-instruct"],
     link: "https://github.com/EndikaFitra/AI-Server-Assistant-DataWarehouse",
+  },
+  {
+    title: "Dashboard KPI with Chatbot Integration",
+    desc: "Dashboard untuk memantau KPI perusahaan dengan integrasi chatbot berbasis LLM. Chatbot memberikan wawasan real-time, menjawab pertanyaan terkait KPI, dan memberikan rekomendasi berdasarkan data yang tersedia.",
+    tech: ["LLM", "MCP", "Ollama", "Data Warehouse", "llama3.1", "llama-3.1-8b-instant", "gemini-3.1-flash-lite-preview", "inclusionai/ling-2.6-flash:free"],
+    link: "",
   },
 ];
 
