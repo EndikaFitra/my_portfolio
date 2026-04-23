@@ -14,3 +14,16 @@ services:
     ports:
       - "8004:8004"
     restart: unless-stopped
+
+  nginx-exporter:
+    image: nginx/nginx-prometheus-exporter:1.1
+    container_name: nginx-exporter
+    ports:
+      - "0.0.0.0:9113:9113" # Mengekspos port 9113 agar bisa di-scrape AIOps
+    command:
+      # Ganti "web" di bawah ini dengan **nama service nginx** di dalam docker compose Anda (misal "web", "nginx", dll)
+      # Ganti "80" jika Nginx dalam docker Anda listen di port lain (misal 8004)
+      - "-nginx.scrape-uri=http://web-porto:8004/stub_status"
+    depends_on:
+      - web-porto
+    restart: unless-stopped
