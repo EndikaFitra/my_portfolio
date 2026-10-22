@@ -5,10 +5,18 @@ import { Briefcase, Users, GraduationCap } from "lucide-react";
 const experiences = [
   {
     icon: Briefcase,
+    role: "Software Engineer Intern EHFS Division",
+    org: "PT Sinar Mas Agro Resources and Technology Tbk",
+    logo: "/sinarmas_icon.png",
+    period: "Agustus 2026 - sekarang",
+    desc: "Fokus pada pembangunan aplikasi berbasis web untuk memudahkan proses input data pekerja. Menggunakan Apache, PHP, dan Microsoft SQL Server. "
+  },
+  {
+    icon: Briefcase,
     role: "Tech Infra Intern",
     org: "Trustmedis",
     logo: "/trustmedis.png",
-    period: "2026 — Sekarang",
+    period: "Feb - June 2026",
     desc: "Fokus pada eksplorasi AI untuk peringkasan data operasional infrastruktur. Bekerja dengan Docker, monitoring tools, dan integrasi LLM ke dalam workflow internal.",
   },
   {
