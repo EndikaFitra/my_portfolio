@@ -17,14 +17,18 @@ const facts = [
 const HeroSection = () => {
   return (
     <section className="relative overflow-hidden">
-      {/* Tekstur grid halus di belakang hero */}
+      {/* Tekstur grid halus di belakang hero, memudar ke tepi */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 opacity-[0.03]"
+        className="pointer-events-none absolute inset-0 opacity-[0.05]"
         style={{
           backgroundImage:
             "linear-gradient(hsl(var(--foreground)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--foreground)) 1px, transparent 1px)",
           backgroundSize: "60px 60px",
+          maskImage:
+            "radial-gradient(ellipse 80% 75% at 32% 42%, #000 0%, rgba(0,0,0,0.6) 45%, transparent 80%)",
+          WebkitMaskImage:
+            "radial-gradient(ellipse 80% 75% at 32% 42%, #000 0%, rgba(0,0,0,0.6) 45%, transparent 80%)",
         }}
       />
 
