@@ -4,6 +4,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Fonts: preconnect so the CSS request is not serialised behind the stylesheet -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+  />
+
+  <!-- Largest paint on first viewport -->
+  <link
+    rel="preload"
+    as="image"
+    href="/myphotos.webp"
+    imagesrcset="/myphotos-480.webp 480w, /myphotos.webp 900w"
+    imagesizes="(min-width: 768px) 320px, 70vw"
+  />
   <!-- Application Title -->
   <title>Endika Fitra - Portfolio</title>
   <meta name="description" content="Web Portfolio Project" />

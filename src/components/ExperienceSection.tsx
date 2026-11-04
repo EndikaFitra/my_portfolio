@@ -76,7 +76,15 @@ const ExperienceSection = () => {
                     <div className={`flex items-center gap-3 mb-4 ${i % 2 === 0 ? "md:flex-row-reverse justify-start" : ""}`}>
                       {exp.logo && (
                         <div className="w-10 h-10 rounded-md bg-white p-1 shadow-sm shrink-0 overflow-hidden flex items-center justify-center">
-                          <img src={exp.logo} alt={exp.org} className="w-full h-full object-contain" />
+                          <img
+                            src={exp.logo}
+                            alt={exp.org}
+                            width={160}
+                            height={160}
+                            loading="lazy"
+                            decoding="async"
+                            className="w-full h-full object-contain"
+                          />
                         </div>
                       )}
                       <p className="text-sm text-primary/80 font-bold">{exp.org}</p>

@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { supabase } from "@/lib/supabase";
 
 const socials = [
   { icon: Github, label: "GitHub", href: "https://github.com/EndikaFitra" },
@@ -31,6 +30,8 @@ const ContactSection = () => {
     };
 
     try {
+      // Supabase hanya dibutuhkan saat submit — jangan ikut payload awal.
+      const { supabase } = await import("@/lib/supabase");
       const { error } = await supabase
         .from('contacts')
         .insert([data]);
