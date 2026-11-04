@@ -108,6 +108,8 @@ const ProjectsSection = () => {
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
+                      tabIndex={-1}
+                      aria-hidden="true"
                       className="underline-offset-4 hover:text-primary hover:underline"
                     >
                       {project.title}
@@ -138,6 +140,7 @@ const ProjectsSection = () => {
                     className="inline-flex items-center gap-1.5 text-sm font-medium text-foreground underline-offset-4 hover:text-primary hover:underline"
                   >
                     Lihat repositori
+                    <span className="sr-only"> {project.title}</span>
                     <ArrowUpRight size={15} aria-hidden="true" />
                   </a>
                 </div>

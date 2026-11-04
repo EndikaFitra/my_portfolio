@@ -138,6 +138,7 @@ const ContactSection = () => {
                 id="contact-name"
                 name="name"
                 autoComplete="name"
+                maxLength={100}
                 required
                 className="bg-background font-body"
               />
@@ -166,6 +167,7 @@ const ContactSection = () => {
                 name="message"
                 required
                 rows={4}
+                maxLength={2000}
                 className="resize-none bg-background font-body"
               />
             </div>

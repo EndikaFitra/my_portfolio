@@ -5,16 +5,23 @@ const NotFound = () => {
   const location = useLocation();
 
   useEffect(() => {
-    console.error("404 Error: User attempted to access non-existent route:", location.pathname);
+    if (import.meta.env.DEV) {
+      console.warn("404: rute tidak ditemukan:", location.pathname);
+    }
   }, [location.pathname]);
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-muted">
+    <div className="flex min-h-screen items-center justify-center bg-background px-6">
       <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">404</h1>
-        <p className="mb-4 text-xl text-muted-foreground">Oops! Page not found</p>
-        <a href="/" className="text-primary underline hover:text-primary/90">
-          Return to Home
+        <h1 className="mb-3 font-display text-4xl font-bold text-foreground">404</h1>
+        <p className="mb-6 text-muted-foreground">
+          Halaman yang kamu cari tidak ada.
+        </p>
+        <a
+          href="/"
+          className="font-medium text-primary underline underline-offset-4 hover:text-primary/90"
+        >
+          Kembali ke beranda
         </a>
       </div>
     </div>

@@ -78,7 +78,8 @@ const ExperienceSection = () => {
                         <div className="w-10 h-10 rounded-md bg-white p-1 shadow-sm shrink-0 overflow-hidden flex items-center justify-center">
                           <img
                             src={exp.logo}
-                            alt={exp.org}
+                            alt=""
+                            aria-hidden="true"
                             width={160}
                             height={160}
                             loading="lazy"
