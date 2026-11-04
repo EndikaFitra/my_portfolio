@@ -17,7 +17,18 @@ const facts = [
 const HeroSection = () => {
   return (
     <section className="relative overflow-hidden">
-      <div className="mx-auto max-w-5xl px-6 pt-28 pb-16 md:pt-32 md:pb-24">
+      {/* Tekstur grid halus di belakang hero */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 opacity-[0.03]"
+        style={{
+          backgroundImage:
+            "linear-gradient(hsl(var(--foreground)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--foreground)) 1px, transparent 1px)",
+          backgroundSize: "60px 60px",
+        }}
+      />
+
+      <div className="relative z-10 mx-auto max-w-5xl px-6 pt-28 pb-16 md:pt-32 md:pb-24">
         <div className="grid gap-10 md:grid-cols-12 md:items-center md:gap-12">
           <div className="md:col-span-7">
             <motion.h1
