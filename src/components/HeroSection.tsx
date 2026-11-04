@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section className="min-h-[78vh] pt-16 flex items-center justify-center relative overflow-hidden">
       {/* Subtle grid background */}
       <div
         className="absolute inset-0 opacity-[0.03]"
@@ -16,19 +16,10 @@ const HeroSection = () => {
       />
 
       <div className="section-container text-center relative z-10">
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1 }}
-          className="section-title mb-4"
-        >
-          Halo, saya
-        </motion.p>
-
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2 }}
+          transition={{ delay: 0.1 }}
           className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-foreground font-display mb-6"
         >
           Endika<span className="text-primary">.</span>
@@ -52,7 +43,7 @@ const HeroSection = () => {
           <Button asChild size="lg" className="rounded-full px-8 font-display">
             <a href="#projects">
               <ArrowDown size={16} className="mr-2" />
-              Lihat Proyek
+              Lihat karya
             </a>
           </Button>
           <Button

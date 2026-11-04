@@ -74,14 +74,13 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="bg-card">
+    <section id="contact">
       <div className="section-container" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
         >
-          <p className="section-title">Kontak</p>
           <h2 className="section-heading">Mari terhubung</h2>
         </motion.div>
 

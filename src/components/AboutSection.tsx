@@ -14,8 +14,7 @@ const AboutSection = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
         >
-          <p className="section-title">Tentang Saya</p>
-          <h2 className="section-heading">Endika Fitra Ramadani</h2>
+          <h2 className="section-heading">Tentang saya</h2>
         </motion.div>
 
         <motion.div

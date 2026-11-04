@@ -41,7 +41,6 @@ const ExperienceSection = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
         >
-          <p className="section-title">Pengalaman</p>
           <h2 className="section-heading">Perjalanan saya sejauh ini</h2>
         </motion.div>
 

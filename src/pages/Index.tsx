@@ -27,10 +27,10 @@ const Index = () => {
       <ScrollProgress />
       <Navbar />
       <HeroSection />
-      <AboutSection />
-      <SkillsSection />
-      <ExperienceSection />
       <ProjectsSection />
+      <ExperienceSection />
+      <SkillsSection />
+      <AboutSection />
       <ContactSection />
       <Footer />
     </div>

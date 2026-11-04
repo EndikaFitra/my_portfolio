@@ -32,7 +32,6 @@ const SkillsSection = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
         >
-          <p className="section-title">Keahlian</p>
           <h2 className="section-heading">Tools & teknologi yang saya gunakan</h2>
         </motion.div>
 
