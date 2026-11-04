@@ -21,18 +21,9 @@ const AboutSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="grid md:grid-cols-2 gap-10 items-center"
+          className="max-w-2xl"
         >
-          <div className="relative mx-auto md:ml-0 rounded-2xl overflow-hidden shadow-xl border border-border group w-full max-w-sm aspect-[4/5] object-cover">
-            <div className="absolute inset-0 bg-primary/10 mix-blend-overlay z-10"></div>
-            <img
-              src="/myphotos.png"
-              alt="Endika Fitra Ramadani"
-              className="object-cover w-full h-full transition-transform duration-500 group-hover:scale-105"
-            />
-          </div>
-
-          <div className="space-y-5 text-muted-foreground leading-relaxed text-lg">
+          <div className="space-y-5 text-lg leading-relaxed text-muted-foreground">
             <p>
               Saya adalah mahasiswa <span className="text-foreground font-medium">Applied Data Science</span> di Politeknik Elektronika Negeri Surabaya yang sangat tertarik pada pengembangan sistem berbasis kecerdasan buatan. Mulai dari Large Language Models <span className="text-foreground font-medium">(LLM)</span>, Retrieval-Augmented Generation <span className="text-foreground font-medium">(RAG)</span>, hingga Model Context Protocol <span className="text-foreground font-medium">(MCP)</span>.
             </p>

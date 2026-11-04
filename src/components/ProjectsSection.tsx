@@ -87,7 +87,7 @@ const ProjectsSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
-          className="section-heading max-w-2xl"
+          className="section-heading max-w-2xl tracking-[-0.02em] md:text-5xl"
         >
           Karya terpilih
         </motion.h2>
@@ -103,7 +103,7 @@ const ProjectsSection = () => {
             >
               <div className="grid gap-5 md:grid-cols-12 md:gap-10">
                 <div className="md:col-span-7">
-                  <h3 className="font-display text-2xl font-semibold leading-snug text-foreground md:text-3xl">
+                  <h3 className="font-display text-[1.75rem] font-semibold leading-[1.15] tracking-[-0.01em] text-foreground md:text-4xl">
                     <a
                       href={project.link}
                       target="_blank"
@@ -122,7 +122,7 @@ const ProjectsSection = () => {
                   <p className="mb-5 leading-relaxed text-muted-foreground">{project.desc}</p>
 
                   {project.outcome && (
-                    <p className="mb-5 font-display text-xl font-medium text-foreground">
+                    <p className="mb-5 font-display text-2xl font-medium tabular-nums tracking-[-0.01em] text-foreground md:text-3xl">
                       {project.outcome}
                     </p>
                   )}
@@ -155,7 +155,7 @@ const ProjectsSection = () => {
               const meta = project.tech.slice(0, 2).join(" · ");
               const content = (
                 <>
-                  <span className="font-display text-base leading-snug text-foreground md:text-lg">
+                  <span className="font-display text-lg leading-snug text-foreground md:text-xl">
                     {project.title}
                   </span>
                   <span className="shrink-0 font-display text-sm text-muted-foreground">

@@ -15,7 +15,7 @@ const experiences = [
     icon: Briefcase,
     role: "Tech Infra Intern",
     org: "Trustmedis",
-    logo: "/trustmedis.png",
+    logo: "/trustmedis.webp",
     period: "Feb - June 2026",
     desc: "Fokus pada eksplorasi AI untuk peringkasan data operasional infrastruktur. Bekerja dengan Docker, monitoring tools, dan integrasi LLM ke dalam workflow internal.",
   },
