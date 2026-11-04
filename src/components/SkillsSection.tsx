@@ -5,18 +5,18 @@ import { Brain, Server, Database } from "lucide-react";
 const skillGroups = [
   {
     icon: Brain,
-    title: "AI",
-    skills: ["LLM", "RAG", "MCP", "Ollama"],
-  },
-  {
-    icon: Server,
-    title: "Infrastructure & Tools",
-    skills: ["Docker", "Grafana", "Prometheus", "Linux", "Git"],
+    title: "AI & LLM",
+    skills: ["LLM", "RAG", "MCP", "Ollama", "ChromaDB", "TensorFlow"],
   },
   {
     icon: Database,
     title: "Data",
-    skills: ["SQL", "NoSQL", "Data Modeling", "ETL", "Data Warehousing", "Data Visualization", "Data Analysis", "Machine Learning", "Deep Learning", "NLP"],
+    skills: ["SQL", "PostgreSQL", "ETL", "Data Warehouse", "Data Modeling", "Data Analysis"],
+  },
+  {
+    icon: Server,
+    title: "Backend & Infra",
+    skills: ["Python", "FastAPI", "Docker", "Prometheus", "Grafana", "Linux"],
   },
 ];
 
@@ -35,7 +35,7 @@ const SkillsSection = () => {
           <h2 className="section-heading">Keahlian</h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid gap-8 md:grid-cols-3">
           {skillGroups.map((group, i) => (
             <motion.div
               key={group.title}

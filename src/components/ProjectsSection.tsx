@@ -104,16 +104,7 @@ const ProjectsSection = () => {
               <div className="grid gap-5 md:grid-cols-12 md:gap-10">
                 <div className="md:col-span-7">
                   <h3 className="font-display text-[1.75rem] font-semibold leading-[1.15] tracking-[-0.01em] text-foreground md:text-4xl">
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      tabIndex={-1}
-                      aria-hidden="true"
-                      className="underline-offset-4 hover:text-primary hover:underline"
-                    >
-                      {project.title}
-                    </a>
+                    {project.title}
                   </h3>
                 </div>
 
@@ -137,7 +128,7 @@ const ProjectsSection = () => {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-sm font-medium text-foreground underline-offset-4 hover:text-primary hover:underline"
+                    className="inline-flex items-center gap-1.5 -my-2 py-2 text-sm font-medium text-foreground underline-offset-4 hover:text-primary hover:underline"
                   >
                     Lihat repositori
                     <span className="sr-only"> {project.title}</span>

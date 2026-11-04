@@ -42,10 +42,11 @@ const ContactSection = () => {
       }
 
       // Notifikasi Email via Web3Forms
+      let notified = false;
       const web3formsAccessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
       if (web3formsAccessKey && web3formsAccessKey !== "your_web3forms_access_key") {
         try {
-          await fetch("https://api.web3forms.com/submit", {
+          const response = await fetch("https://api.web3forms.com/submit", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
@@ -56,16 +57,29 @@ const ContactSection = () => {
               ...data,
             }),
           });
+          notified = response.ok;
+          if (!response.ok) {
+            console.error("Web3Forms menolak kiriman:", response.status);
+          }
         } catch (emailError) {
           console.error("Gagal mengirim notifikasi email:", emailError);
         }
       }
 
-      toast({
-        title: "Pesan terkirim",
-        description: "Saya balas ke email yang kamu tulis.",
-      });
       form.reset();
+
+      if (notified) {
+        toast({
+          title: "Pesan terkirim",
+          description: "Saya balas ke email yang kamu tulis.",
+        });
+      } else {
+        // Tersimpan di database, tetapi tidak ada notifikasi email yang lolos.
+        toast({
+          title: "Pesan tersimpan",
+          description: `Notifikasi email belum terkirim. Untuk memastikan saya baca, kirim juga ke ${EMAIL}.`,
+        });
+      }
     } catch (error) {
       console.error(error);
       toast({

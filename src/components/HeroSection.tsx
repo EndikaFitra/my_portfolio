@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Download } from "lucide-react";
+import { ArrowDown, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
+const EMAIL = "endikfitra10@gmail.com";
 
 const facts = [
   {
@@ -93,9 +95,9 @@ const HeroSection = () => {
                 size="lg"
                 className="rounded-full px-5 font-display text-foreground"
               >
-                <a href="/cv_endika.pdf" download="CV-Endika-Fitra-Ramadani.pdf">
-                  <Download size={16} className="mr-2" aria-hidden="true" />
-                  Unduh CV
+                <a href={`mailto:${EMAIL}`}>
+                  <Mail size={16} className="mr-2" aria-hidden="true" />
+                  Email saya
                 </a>
               </Button>
             </motion.div>
