@@ -32,7 +32,7 @@ const SkillsSection = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="section-heading">Tools & teknologi yang saya gunakan</h2>
+          <h2 className="section-heading">Keahlian</h2>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-8">

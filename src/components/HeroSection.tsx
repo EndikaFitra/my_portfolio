@@ -78,11 +78,7 @@ const HeroSection = () => {
                 size="lg"
                 className="rounded-full px-5 font-display text-foreground"
               >
-                <a
-                  href="https://drive.google.com/file/d/1OV6re03DylwjO9QtTM-vkijmbjpve1f1/view?usp=drive_link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="/cv_endika.pdf" download="CV-Endika-Fitra-Ramadani.pdf">
                   <Download size={16} className="mr-2" aria-hidden="true" />
                   Unduh CV
                 </a>

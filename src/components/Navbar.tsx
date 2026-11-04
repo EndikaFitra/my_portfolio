@@ -3,11 +3,11 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const links = [
-  { label: "Projects", href: "#projects" },
-  { label: "Experience", href: "#experience" },
-  { label: "Skills", href: "#skills" },
-  { label: "About", href: "#about" },
-  { label: "Contact", href: "#contact" },
+  { label: "Karya", href: "#projects" },
+  { label: "Pengalaman", href: "#experience" },
+  { label: "Keahlian", href: "#skills" },
+  { label: "Tentang", href: "#about" },
+  { label: "Kontak", href: "#contact" },
 ];
 
 const Navbar = () => {
