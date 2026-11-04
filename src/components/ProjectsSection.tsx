@@ -71,7 +71,7 @@ const TechList = ({ tech }: { tech: string[] }) => {
           {t}
         </span>
       ))}
-      {rest > 0 && <span className="text-muted-foreground/70">+{rest}</span>}
+      {rest > 0 && <span className="text-muted-foreground">+{rest}</span>}
     </div>
   );
 };

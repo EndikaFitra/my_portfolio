@@ -8,7 +8,7 @@ const experiences = [
     role: "Software Engineer Intern EHFS Division",
     org: "PT Sinar Mas Agro Resources and Technology Tbk",
     logo: "/sinarmas_icon.png",
-    period: "Agustus 2026 - sekarang",
+    period: "Agustus 2026 — sekarang",
     desc: "Fokus pada pembangunan aplikasi berbasis web untuk memudahkan proses input data pekerja. Menggunakan Apache, PHP, dan Microsoft SQL Server. "
   },
   {
@@ -16,7 +16,7 @@ const experiences = [
     role: "Tech Infra Intern",
     org: "Trustmedis",
     logo: "/trustmedis.webp",
-    period: "Feb - June 2026",
+    period: "Februari — Juni 2026",
     desc: "Fokus pada eksplorasi AI untuk peringkasan data operasional infrastruktur. Bekerja dengan Docker, monitoring tools, dan integrasi LLM ke dalam workflow internal.",
   },
   {
@@ -24,7 +24,7 @@ const experiences = [
     role: "Politeknik Elektronika Negeri Surabaya",
     org: "Prodi Sains Data Terapan",
     logo: "/pens.png",
-    period: "2023 — Sekarang",
+    period: "2023 — sekarang",
     desc: "Mempelajari dasar-dasar data science, machine learning, dan AI. Aktif dalam proyek-proyek kampus yang berfokus pada analisis data dan pengembangan model AI.",
   },
 ];
@@ -87,7 +87,7 @@ const ExperienceSection = () => {
                           />
                         </div>
                       )}
-                      <p className="text-sm text-primary/80 font-bold">{exp.org}</p>
+                      <p className="text-sm text-primary font-bold">{exp.org}</p>
                     </div>
                     <p className="text-sm text-muted-foreground leading-relaxed">
                       {exp.desc}
